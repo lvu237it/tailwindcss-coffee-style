@@ -35,5 +35,9 @@
 }
 
 .vulv-subheadline-label{
-  @apply uppercase mx-3 text-center tracking-widest text-gray-500 font-medium text-[12px];
+  @apply uppercase mx-3 text-center tracking-widest text-gray-500 font-medium text-xs;
+}
+
+.vulv-button{
+  @apply text-center uppercase py-4 px-8 font-semibold cursor-pointer text-sm tracking-wider hover:bg-opacity-95;
 }
