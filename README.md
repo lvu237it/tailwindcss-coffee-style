@@ -1,5 +1,7 @@
 # TailwindCSS Coffee Style by lvu237
 
+# The completed version has been deployed at https://coffee-style-fe-tailwindcss.web.app
+
 ## Requirements
 
 * **nodejs >= 14.7.0**
