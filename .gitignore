@@ -2,3 +2,5 @@
 node_modules
 public/output.css
 .firebaserc
+firebase-debug.log
+.github/workflows/firebase-hosting-pull-request.yml
