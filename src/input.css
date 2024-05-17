@@ -61,7 +61,6 @@
 .vulv-parallax-section {
   position: relative;
   z-index: -1;
-  height: 40vh;
 }
 
 .vulv-no-parallax {
@@ -83,11 +82,24 @@
 
 @media screen(xl){
   .vulv-parallax-section {
-    height: 70vh;
     transform-style: preserve-3d;
   }
 
   .vulv-parallax-image {
-    transform: translateZ(-1px) scale(1.5);
+    /* transform: translateZ(-1px) scale(1.5); */
+  }
+}
+/* Adjustments based on viewport width */
+/*  */
+
+@media screen and (orientation: landscape) and (max-aspect-ratio: 1/2) {
+  .vulv-parallax-section {
+    height: 50vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-aspect-ratio: 5) {
+  .vulv-parallax-section {
+    height: 70vh;
   }
 }
