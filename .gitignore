@@ -2,3 +2,4 @@
 node_modules
 public/output.css
 .firebaserc
+firebase-config.js
