@@ -47,7 +47,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   /* ... */
-  perspective: 2px;
+  perspective: 2px; /* Điều chỉnh giá trị này */
 }
 
 .vulv-no-parallax,
@@ -61,6 +61,7 @@
 .vulv-parallax-section {
   position: relative;
   z-index: -1;
+  height: 50vh; /* Điều chỉnh giá trị này nếu cần */
 }
 
 .vulv-no-parallax {
@@ -73,33 +74,38 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  /* ... */
-  z-index: -1;
+  z-index: -2; /* Điều chỉnh z-index để đảm bảo nó nằm dưới các phần tử khác */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-@media screen(xl){
+@media (max-width: 430px) {
   .vulv-parallax-section {
+    height: 40vh; /* Điều chỉnh giá trị này nếu cần */
     transform-style: preserve-3d;
   }
-
   .vulv-parallax-image {
-    /* transform: translateZ(-1px) scale(1.5); */
-  }
-}
-/* Adjustments based on viewport width */
-/*  */
-
-@media screen and (orientation: landscape) and (max-aspect-ratio: 1/2) {
-  .vulv-parallax-section {
-    height: 50vh;
+    transform: translateZ(-1px) scale(1); /* Điều chỉnh giá trị này để phù hợp với màn hình nhỏ */
   }
 }
 
-@media screen and (orientation: landscape) and (max-aspect-ratio: 5) {
+@media (min-width: 431px) and (max-width: 1024px) {
   .vulv-parallax-section {
-    height: 70vh;
+    height: 50vh; /* Điều chỉnh giá trị này nếu cần */
+    transform-style: preserve-3d;
+  }
+  .vulv-parallax-image {
+    transform: translateZ(-1px) scale(1); /* Điều chỉnh giá trị này để phù hợp với màn hình nhỏ */
+  }
+}
+
+@media (min-width: 1024px) {
+  .vulv-parallax-section {
+    height: 60vh; /* Điều chỉnh giá trị này nếu cần */
+    transform-style: preserve-3d;
+  }
+  .vulv-parallax-image {
+    transform: translateZ(-1px) scale(1.2); /* Điều chỉnh giá trị này để phù hợp với màn hình lớn */
   }
 }

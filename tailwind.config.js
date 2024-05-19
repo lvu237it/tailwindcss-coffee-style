@@ -6,9 +6,12 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     screens: {
+      'xxxs': '431px',
       'xxs': '450px',
       'xs': '480px',
       'mxs': '500px',
+      'xmd': '1023px',
+      
       ...defaultTheme.screens,
     },
     extend: {
